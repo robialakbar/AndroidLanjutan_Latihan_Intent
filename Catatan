@@ -1,0 +1,35 @@
+==================================================================
+Intent untuk pindah activity ( Halaman )
+1. Tambahkan Linear Layout
+2. Tambahkan Button dan isi onclick = pindah dan text nya = PINDAH
+3. Tambahkan Scribt di Java-> MainActivity
+
+-----------------------------------------------------------------
+package com.robialakbar.latihan_intent;
+
+import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle;
+
+//tambahkan import ini
+import android.view.View;
+import android.content.Intent;
+
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceSt
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+    // tambahkan View ini juga
+    public void pindah(View View){
+        Intent i = new Intent(this, Tujuan.class);
+        startActivity(i);
+    }
+}
+
+--------------------------------------------------------------------
+
+===================================================================
+
+
